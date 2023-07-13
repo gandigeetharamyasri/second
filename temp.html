@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Temperature Converter</title>
+<style>
+   /* CSS for centering elements */
+   body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+   background-color: #FFBF00;
+   /* Specify a background image */
+   background-image: "F:\temperature convertor\them.jpg";
+   /* Set the background image to cover the entire body */
+   background-size: cover;
+   /* Position the background image at the center */
+   background-position: center;
+}
+
+h2, p {
+   color: black;
+   }
+/* Define a class for custom styling */
+.custom-font {
+   font-size: 36px; /* Set the font size to 36 pixels */
+   font-family: Arial, sans-serif; /* Set the font family to Arial or a fallback sans-serif font */
+   font-weight: bold; /* Optionally set the font weight to bold */
+}
+</style>
+<script>
+function convertTemperature() {
+   var celsius = parseFloat(document.getElementById("celsius").value);
+   var fahrenheit = (celsius * 9/5) + 32;
+   document.getElementById("fahrenheit").value = fahrenheit;
+}
+</script>
+</head>
+<body>
+   <h1 class="custom-font">Temperature Converter</h1>
+  <h2 class="custom-font">Celsius:</h2> <input type="number" id="celsius" /><br>
+   <button onclick="convertTemperature()">Convert</button><br>
+  <h2 class="custom-font">Fahrenheit:</h2> <input type="number" id="fahrenheit" readonly />
+</body>
+</html>
