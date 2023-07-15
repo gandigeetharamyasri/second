@@ -11,13 +11,19 @@
       align-items: center;
       height: 100vh;
       margin: 0;
-   background-color: #FFBF00;
-   /* Specify a background image */
-   background-image: "F:\temperature convertor\them.jpg";
+   background-color: #FFFFF0;
    /* Set the background image to cover the entire body */
    background-size: cover;
    /* Position the background image at the center */
    background-position: center;
+}
+.logo {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
 }
 
 h2, p {
@@ -39,6 +45,7 @@ function convertTemperature() {
 </script>
 </head>
 <body>
+<li class="logo"><img src=" https://media3.giphy.com/media/jLfC1gJfqMyZO/200w.gif?cid=790b76112b3n5wiviqx6ymuexct3gi00khd60oo8uaox51l2&ep=v1_gifs_search&rid=200w.gif&ct=g" </li>
    <h1 class="custom-font">Temperature Converter</h1>
   <h2 class="custom-font">Celsius:</h2> <input type="number" id="celsius" /><br>
    <button onclick="convertTemperature()">Convert</button><br>
